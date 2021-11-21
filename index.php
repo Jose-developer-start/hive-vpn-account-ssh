@@ -62,6 +62,9 @@
   <?php foreach($mensaje as $msg){
        echo $msg;
   } ?>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                         </button>
 </div>
 <?php $mensaje[] = ""; endif ?>
 <div class="row">
@@ -78,9 +81,7 @@
                               echo "<p>Clave: $user</p>";
                               echo "<p>fecha de expiración: $date</p>";
                          } ?>
-                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                         </button>
+                         
                          </div>
                          <?php endif ?>
                     </div>
