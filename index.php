@@ -13,7 +13,7 @@
                          $user = $_POST['user'];
                          $passwd = $_POST['passwd'];
                          $ssh = new Websocket($user,$passwd,$date);
-                         $ssh->create();
+                         $result = $ssh->create();
                     }else{
                          $mensaje[] = "Por favor, ingresar una contraseña mas larga";
                     }

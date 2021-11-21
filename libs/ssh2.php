@@ -23,6 +23,13 @@ class Websocket{
      
      if (!ssh2_auth_password($connection, 'root', 'vps_2021')) { die('No se puede autenticar con el usuario y clave suministrados.'); }
      $comand = 'useradd -e '.$this->date.' -p "$(mkpasswd --method=sha-512 '.$this->passwd.')" '.$this->user;
+     
+     //Verificar usuario
+     /*
+     grep $user /etc/passwd
+     if(!){
+
+    }*/
      if (!($exec = ssh2_exec($connection, $comand))) {
      die('No se pudo ejecutar el comando.'); 
      } else { 
@@ -35,5 +42,8 @@ class Websocket{
           fclose($exec); 
      }
     }
+    public function verify_user(){
+
+    }   
 }
 ?>

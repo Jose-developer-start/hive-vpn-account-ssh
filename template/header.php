@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/493/493678.png" type="image/jpg">
     <title>Cuentas Websocket premium</title>
     <meta name="description" content="Hive VPN ofrece cuentas premium para el protocolo websocket, las cuentas de 5 dias son gratis y las de 31 dias son pagadas, los métodos de pagos son Bitcoin (Satoshig)">
     <link rel="stylesheet" href="./public/css/main.css">
