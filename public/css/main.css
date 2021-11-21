@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a,b{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+a{
+    color: #f1f1f1 !important;
+}
+
+.bg-dark-blue{
+    background: #2a6591 !important;
+}
+nav{
+    border-bottom: 1px solid #867f7f;
+}
+
+header{
+    height: 50vh;
+    width: 100%;
+    background: #2a6591 !important;
+}
+
+header h1{
+    color: #f1f4f4;
+}
+
+header p{
+    color: #beb193;
+    font-size: 20px;
+}
+
+@media (max-width: 760px){
+    header h1{
+        text-align: center;
+    }    
+}
+
+.ticket{
+    background: #f8aa02;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket__header h3{
+    font-weight: 700;
+    font-size: 40px;
+    color: #f2f2f2;
+}
+
+.ticket__footer p{
+    font-family: 'Poppins','san-serif';
+    font-weight: 300;
+    color: #f1f4f4;
+}
+.title-server{
+    color: #00467a;
+}
+.card-header h3{
+    color: #059669 !important;
+}
+
+footer{
+    background: #2a6591 !important;
+    color: #d8d0d0;
+    font-family: 'Poppins',sans-serif;
+}
