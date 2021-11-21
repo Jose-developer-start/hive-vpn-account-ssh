@@ -29,7 +29,7 @@
      </div>
 </header>
 
-<h2 class="text-center title-server my-5">SOPORTE PAR JUEGOS Y LLAMDAS</h2>
+<h2 class="text-center title-server my-5">SOPORTE PARA JUEGOS Y LLAMADAS</h2>
 
 <div class="container">
      <div class="content__soporte">
