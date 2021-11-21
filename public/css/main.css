@@ -41,6 +41,14 @@ header p{
 @media (max-width: 760px){
     header h1{
         text-align: center;
+    }
+    .freefire__logo{
+        width: 350px !important;
+        height: 150px !important;
+    }
+    .whatsapp__logo{
+        width: 350px !important;
+        height: 200px !important;
     }    
 }
 
@@ -60,6 +68,7 @@ header p{
     font-weight: 700;
     font-size: 40px;
     color: #f2f2f2;
+    border-bottom: 1px solid #00467a;
 }
 
 .ticket__footer p{
@@ -78,4 +87,32 @@ footer{
     background: #2a6591 !important;
     color: #d8d0d0;
     font-family: 'Poppins',sans-serif;
+}
+
+.content__title{
+    position: absolute;
+    font-size: 50px;
+    color: #2c2e2d;
+    font-weight: 700;
+    left: -150px;
+    top: 140px;
+}
+
+.freefire__logo{
+    background-image: url('../../public/images/freefire.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+}
+.whatsapp__logo{
+    background-image: url('../../public/images/whatsapp.jpeg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
 }
