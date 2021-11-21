@@ -17,7 +17,7 @@
   <body>
      <nav class="navbar navbar-expand-lg bg-dark-blue navbar-light bg-light">
           <div class="container">
-          <a class="navbar-brand" href="#">HIVE VPN Websocket PREMIUM</a>
+          <a class="navbar-brand" href="http://hive-vpn.tk/">HIVE VPN Websocket PREMIUM</a>
           <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
