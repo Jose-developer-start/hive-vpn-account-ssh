@@ -32,6 +32,10 @@
                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                </li>
 
+               <li class="nav-item active">
+               <a class="nav-link" href="?content=login">Login <span class="sr-only">(current)</span></a>
+               </li>
+
           </ul>
           </div>
           </div>

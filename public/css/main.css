@@ -1,118 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
-
-
-h1, h2, h3{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-a,b{
-    font-family: 'Poppins',sans-serif;
-    font-weight: 500;
+a,
+b {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-a{
-    color: #f1f1f1 !important;
+a {
+  color: #f1f1f1 !important;
 }
 
-.bg-dark-blue{
-    background: #2a6591 !important;
+.bg-dark-blue {
+  background: #2a6591 !important;
 }
-nav{
-    border-bottom: 1px solid #867f7f;
-}
-
-header{
-    height: 50vh;
-    width: 100%;
-    background: #2a6591 !important;
+nav {
+  border-bottom: 1px solid #867f7f;
 }
 
-header h1{
-    color: #f1f4f4;
+header {
+  height: 50vh;
+  width: 100%;
+  background: #2a6591 !important;
 }
 
-header p{
-    color: #beb193;
-    font-size: 20px;
+header h1 {
+  color: #f1f4f4;
 }
 
-@media (max-width: 760px){
-    header h1{
-        text-align: center;
-    }
-    .freefire__logo{
-        width: 350px !important;
-        height: 150px !important;
-    }
-    .whatsapp__logo{
-        width: 350px !important;
-        height: 200px !important;
-    }    
+header p {
+  color: #beb193;
+  font-size: 20px;
 }
 
-.ticket{
-    background: #f8aa02;
-    height: 150px;
-    width: 150px;
-    padding: 5px;
-    border-radius: 5px;
+@media (max-width: 760px) {
+  header h1 {
     text-align: center;
+  }
+  .freefire__logo {
+    width: 350px !important;
+    height: 150px !important;
+  }
+  .whatsapp__logo {
+    width: 350px !important;
+    height: 200px !important;
+  }
+}
+
+.ticket {
+  background: #f8aa02;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ticket__header h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #f2f2f2;
+  border-bottom: 1px solid #00467a;
+}
+
+.ticket__footer p {
+  font-family: "Poppins", "san-serif";
+  font-weight: 300;
+  color: #f1f4f4;
+}
+.title-server {
+  color: #00467a;
+}
+.card-header h3 {
+  color: #059669 !important;
+}
+
+footer {
+  background: #2a6591 !important;
+  color: #d8d0d0;
+  font-family: "Poppins", sans-serif;
+}
+
+.content__title {
+  position: absolute;
+  font-size: 50px;
+  color: #2c2e2d;
+  font-weight: 700;
+  left: -150px;
+  top: 140px;
+}
+
+.freefire__logo {
+  background-image: url("../../public/images/freefire.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+.whatsapp__logo {
+  background-image: url("../../public/images/whatsapp.jpeg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.container_login {
+    height: 90vh;
+    width: 100%;
+    background-color: #232e3c;
+    background-image: url(https://client.opentunnel.net/assets/img/bg-pattern.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.ticket__header h3{
-    font-weight: 700;
-    font-size: 40px;
-    color: #f2f2f2;
-    border-bottom: 1px solid #00467a;
+.card-login{
+    height: 250px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px #d8d0d0;
+    background-color: #e6d7d7;
 }
-
-.ticket__footer p{
-    font-family: 'Poppins','san-serif';
-    font-weight: 300;
-    color: #f1f4f4;
+@media (max-width: 760px){
+    .card-login{
+        text-align: center;
+        height: 66%;
+    }
 }
-.title-server{
-    color: #00467a;
+.btn{
+    width: 150px;
 }
-.card-header h3{
-    color: #059669 !important;
+.login__description{
+    font-family: 'Poppins';
+    font-weight: 500;
 }
-
-footer{
-    background: #2a6591 !important;
-    color: #d8d0d0;
-    font-family: 'Poppins',sans-serif;
+.input_login {
+    border: 0;
+    background: none;
+    border-bottom: 1px solid #232e3c;
+    outline: none;
 }
-
-.content__title{
-    position: absolute;
-    font-size: 50px;
-    color: #2c2e2d;
-    font-weight: 700;
-    left: -150px;
-    top: 140px;
-}
-
-.freefire__logo{
-    background-image: url('../../public/images/freefire.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    width: 500px;
-    height: 300px;
-}
-.whatsapp__logo{
-    background-image: url('../../public/images/whatsapp.jpeg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    width: 500px;
-    height: 300px;
+.input_login:focus{
+    background: none;
 }
