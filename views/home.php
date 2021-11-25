@@ -56,7 +56,9 @@
 
 <?php if(isset($user) && isset($passwd) && isset($date)): ?>
                          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                         <p>GET  internet-vip.cf HTTP/1.1[crlf]Host:internet-vip.cf[crlf]X-Forward-Host:internet-vip.cf[crlf]Connection:  upgrade[crlf]upgrade: websocket[crlf]GET  [host_port]  [protocol][crlf][crlf]</p>
+                         <p>GET shi://host.com HTTP/1.1 
+                              Host: internet-vip.cf 
+                              Upgrade: websocket[crlf][crlf]</p>
                          <?php if(isset($user) && isset($passwd) && isset($date)){
                               echo "<p>Usuario: $user</p>";
                               echo "<p>Clave: $passwd</p>";
