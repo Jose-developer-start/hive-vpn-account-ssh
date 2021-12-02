@@ -1,5 +1,8 @@
 <?php
+session_start();
 include_once "./ssh2.php";
+include_once "../config/conn_db.php";
+$db = new DB();
 if($_POST){
     date_default_timezone_set('America/El_Salvador');
     $year = date('Y');
@@ -24,6 +27,17 @@ if($_POST){
 
                    $ssh = new Websocket($user,$passwd,$date);
                    $result = $ssh->create();
+                   //Insertar en BD MYSQL
+                   $data =[
+                         $user,
+                         $passwd,
+                         $date,
+                         $_SESSION['user']->id
+                   ];
+                    $query = "insert into account_ssh(name,password,date,user_id) VALUES (?,?,?,?)";
+                    $result = $db->connect()->prepare($query);
+                    //Execute save mysql
+                    $result->execute($data);
                    $data = [
                         'user' => $user,
                         'password' => $passwd,

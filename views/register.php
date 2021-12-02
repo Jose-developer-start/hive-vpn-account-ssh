@@ -1,5 +1,5 @@
 <h3>Registrate</h3>
-<form action="#" id="auth-login" method="POST">
+<form action="./moduls/registerUser.php" id="form-user" method="POST">
     <div class="form-group">
         <input name="email" type="text" class="input_login form-control" placeholder="E-mail">
     </div>

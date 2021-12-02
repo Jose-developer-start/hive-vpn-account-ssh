@@ -50,7 +50,11 @@
                                 <label class="form-check-label" for="openv2ray.com">internet-vip.cf <span class="badge bg-success">Valid SSL</span></label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm w-100 subb">Create</button>
+                        <?php if(isset($_SESSION['auth'])): ?>
+                            <button type="submit" class="btn btn-primary btn-sm w-100 subb">Create</button>
+                        <?php else: ?>
+                            <a href="?content=login" class="btn btn-primary btn-sm w-100 subb">Acceder</a>
+                        <?php endif ?>
                     </form>
                 </div>
             </div>

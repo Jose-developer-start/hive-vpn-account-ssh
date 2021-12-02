@@ -19,6 +19,7 @@
           </div>
      </div>
 </header>
+<?php include_once "./sweetAlert.php"; ?>
 
 <h2 class="text-center title-server my-5">SOPORTE PARA JUEGOS Y LLAMADAS</h2>
 
@@ -57,6 +58,7 @@
      <div id="create-ssh">
 
      </div>
+     <?php var_dump(); ?>
      <?php require_once "./views/websocket.php" ?>
 
 </div>

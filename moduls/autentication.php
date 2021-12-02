@@ -1,21 +1,25 @@
 <?php
-
-
+    session_start();
+    include_once "../config/conn_db.php";
+    $db = new DB();
+    
     if($_POST){
         $email = $_POST['email'];
         $pass = $_POST['pass'];
 
-        $myemail = "josedeodanes99@gmail.com";
-        $mypass = "jose";
-
-        if($email == $myemail){
-            if($pass == $mypass){
+        $result = $db->connect()->prepare('SELECT * FROM users WHERE email=?');
+        $result->execute([$email]);
+        $dataUser = $result->fetch(PDO::FETCH_OBJ);
+        if($email == $dataUser->email){
+            if(password_verify($pass,$dataUser->password)){
+                $_SESSION['auth'] = true;
+                $_SESSION['user'] = $dataUser;
                 echo "success";
             }else{
-                echo "error, datos no encontrados";
+                echo "error";
             }
         }else{
-            echo "error, datos no econtrados";
+            echo "error";
         }
         
     }

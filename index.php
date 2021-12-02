@@ -1,10 +1,7 @@
 <?php
      session_start();
-     
 
      include_once "./template/header.php";
-     
-     
      //include_once "./views/websocket.php";
 
      //Menu de peticiones GET
@@ -21,7 +18,6 @@
      
      
      include_once "./template/footer.php"; 
-     
+     include_once "./views/sweetAlert.php";
      
      ?>
- 
