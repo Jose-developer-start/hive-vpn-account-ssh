@@ -1,8 +1,6 @@
 <?php
      session_start();
-     include_once "./libs/conn_ssh2.php";
-     include_once "./libs/ssh2.php";
-     include_once "./libs/save.php";
+     
 
      include_once "./template/header.php";
      

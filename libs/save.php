@@ -1,5 +1,5 @@
 <?php
-
+include_once "./ssh2.php";
 if($_POST){
     date_default_timezone_set('America/El_Salvador');
     $year = date('Y');
@@ -21,15 +21,38 @@ if($_POST){
               if(strlen($_POST['passwd']) > 5){
                    $user = $_POST['user'];
                    $passwd = $_POST['passwd'];
+
                    $ssh = new Websocket($user,$passwd,$date);
                    $result = $ssh->create();
+                   $data = [
+                        'user' => $user,
+                        'password' => $passwd,
+                         'date' => $date,
+                         'success' => true
+                    ];
+
+                    echo json_encode($data);
+
               }else{
-                   $mensaje[] = "Por favor, ingresar una contraseña mas larga";
+                   $response = [
+                        'success' => false,
+                        'message' => "Por favor, ingresar una contraseña mas segura"
+                   ];
+                   echo json_encode($response);
               }
          }else{
-              $mensaje[] = "Por favor, ingrese un nombre mas largo";
+               $response = [
+                    'success' => false,
+                    'message' => "Por favor, ingrese un nombre con mas carácteres"
+               ];
+               echo json_encode($response);
          }
     }else{
-         $mensaje[] = "Campos vacios, ingrese un usuario y contraseña";
+          $response = [
+               'success' => false,
+               'message' => "Campos vacios, ingrese un usuario y contraseña"
+          ];
+          echo json_encode($response);
+     
     }
 }

@@ -27,7 +27,7 @@
             <div class="col-md-8">
                 <div class="p-2 bg-white rounded shadow-sm mb-2">
                     <div class="textad"></div>
-                    <form action="index.php" method="post">
+                    <form action="#" method="post" id="login-ssh">
 
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>

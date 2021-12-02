@@ -18,8 +18,14 @@
     <meta name="description" content="Hive VPN ofrece cuentas premium para el protocolo websocket, las cuentas de 5 dias son gratis y las de 31 dias son pagadas, los métodos de pagos son Bitcoin (Satoshig)">
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
+     <!--JQuery--->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./public/js/login.js"></script>
+    <script src="./public/js/create-ssh.js"></script>
+    <script src="./public/js/register.js"></script>
+</head>
+  <body id="app">
      <nav class="navbar navbar-expand-lg bg-dark-blue navbar-light bg-light">
           <div class="container">
           <a class="navbar-brand" href="http://hive-vpn.tk/">HIVE VPN Websocket PREMIUM</a>

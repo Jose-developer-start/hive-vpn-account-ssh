@@ -1,7 +1,7 @@
 <?php
-
 #apt install php7.4-ssh2
 #apt install php-ssh2-all-dev
+include_once "./conn_ssh2.php";
 
 class Websocket extends SSH2{
     private $user;
