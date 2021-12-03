@@ -1,12 +1,9 @@
-<?php 
-session_start();
-require_once "../config/conn_db.php"; 
+<?php
 
-$db = new DB();
-$result = $db->connect()->prepare('SELECT * FROM account_ssh WHERE user_id=?');
+    if(!isset($_SESSION['auth'])){
+        header('Location: ../index.php');
+    }
 
-$result->execute([$_SESSION['user']->id]);
-$dataUser = $result->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 <!DOCTYPE html>
@@ -56,26 +53,8 @@ $dataUser = $result->fetchAll(PDO::FETCH_OBJ);
                 <div class="col-md-12 " style="color: black;">
                     <div class="tile" style="background-color:#D5D8DC ;">
                         <div class="tile-body">
-                            <div class="table-responsive">
-                                <table class="table table-responsive-sm">
-                                    <thead>
-                                        <tr>
-                                            <th>name</th>
-                                            <th>Fecha de vecimiento</th>
-                                            <th>clave</th>
-                                            
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php foreach($dataUser as $user): ?>
-                                        <tr>
-                                            <td><?php echo $user->name ?></td>
-                                            <td><?php echo $user->date ?></td>
-                                            <td><?php echo $user->password ?></td>
-                                        </tr>
-                                        <?php endforeach ?>
-                                    </tbody>
-                                </table>
+                            <div id="content-app">
+                                
 
                             </div>
                         </div>
@@ -90,6 +69,7 @@ $dataUser = $result->fetchAll(PDO::FETCH_OBJ);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="../public/js/vali-admin.js"></script>
+    <script src="../public/js/funciones-admin.js"></script>
 </body>
 
 </html>

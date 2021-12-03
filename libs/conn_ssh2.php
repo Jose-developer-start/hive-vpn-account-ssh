@@ -5,7 +5,7 @@
             if (!function_exists('ssh2_connect')) {
                 die('No existe la funcion ssh2_connect.'); 
             }
-            //$con = ssh2_connect("143.198.170.229",22);
+            //$con = ssh2_connect("143.198.170.229",22 vps_2021);
      
             if (!($connection = ssh2_connect('143.198.170.229', 22))) {
                 die('No se puede conectar con el servidor VPS.'); 

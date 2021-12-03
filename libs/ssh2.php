@@ -8,7 +8,7 @@ class Websocket extends SSH2{
     private $passwd;
     private $date;
     private $connection;
-    public function __construct($user,$passwd,$date)
+    public function __construct($user =NULL,$passwd=NULL,$date=NULL)
     {
         $this->connection = parent::__construct();
         $this->user = $user;
@@ -37,8 +37,20 @@ class Websocket extends SSH2{
             fclose($exec); 
         }
     }
-    public function verify_user(){
-
+    public function delete_ssh(){
+        $comand = 'deluser '.$this->user;
+        
+        if (!($exec = ssh2_exec($this->connection, $comand))) {
+            die('No se pudo ejecutar el comando.'); 
+        } else { 
+            stream_set_blocking($exec, true); 
+            $data = ''; 
+            while ($fread = fread($exec, 1048576)) {
+                $data .= $fread; 
+            }
+            fclose($exec); 
+            return $data;
+        }
     }   
 }
 ?>
