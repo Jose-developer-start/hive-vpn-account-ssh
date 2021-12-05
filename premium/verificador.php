@@ -53,7 +53,6 @@
         <div class="jumbotron">
             <h3 class="display-4">Pago realizado!!</h3>
             <hr class="my-4">
-            <p class="lead"><?php echo $mensajePaypal ?></p>
         </div>
     </div>
 </div>
