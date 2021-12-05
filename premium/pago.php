@@ -70,8 +70,8 @@
         // Create a PayPal app: https://developer.paypal.com/developer/applications/create
 
         client: {
-            sandbox: 'ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4',
-            production: 'EC3yb6dQAkQ-k-k4AsMPM6-HtMuvaxJc-a8WTbU5Jps2Xv9cxGZKGx3nBAIpEZ1d05s2LivHHNnPIBG3'
+            sandbox: 'AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k',
+            production: 'ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4'
         },
 
         // Wait for the PayPal button to be clicked
@@ -85,8 +85,8 @@
                             total: '<?php echo  $total; ?>',
                             currency: 'USD'
                         },
-                        description: "Compra de productos a Techmology box:$<?php echo number_format($total, 2); ?>",
-                        custom: "<?php echo $SID; ?>#<?php echo $SID; ?>"
+                        description: "Compra de cuenta Websocket 31 días:$<?php echo number_format($total, 2); ?>",
+                        custom: "<?php echo $SID; ?>#<?php echo $_SESSION['user']->id; ?>"
                     }]
                 }
             });
