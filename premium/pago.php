@@ -58,7 +58,7 @@
 
 <script>
     paypal.Button.render({
-        env: 'sandbox', // sandbox | production
+        env: 'production', // sandbox | production
         style: {
             label: 'checkout', // checkout | credit | pay | buynow | generic
             size: 'responsive', // small | medium | large | responsive
@@ -70,8 +70,8 @@
         // Create a PayPal app: https://developer.paypal.com/developer/applications/create
 
         client: {
-            sandbox: 'AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k',
-            production: 'EF4ejD-TryWD5DpezAtd6_7JOzSFgl5OiYtWITYG1hF5tY87oEWT_mMgnnKd9OTxw53nAs1d-_E719_i'
+            sandbox: 'ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4',
+            production: 'EC3yb6dQAkQ-k-k4AsMPM6-HtMuvaxJc-a8WTbU5Jps2Xv9cxGZKGx3nBAIpEZ1d05s2LivHHNnPIBG3'
         },
 
         // Wait for the PayPal button to be clicked

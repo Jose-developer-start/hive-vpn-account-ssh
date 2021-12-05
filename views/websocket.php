@@ -16,7 +16,7 @@
                             <span class="badge badge-primary badge-pill"><i class="far fa-check-circle"></i>
                         </li>
                         <li class="list-group-item py-2">Limit Acc: 100</li>
-                        <li class="list-group-item py-2">Active: 7 Dias</li>
+                        <li class="list-group-item py-2">Active: 3 Dias</li>
                         <li class="list-group-item py-2">Port UDP: 7400
                             <span class="badge badge-primary badge-pill"><i class="far fa-check-circle"></i>
                         </li>
