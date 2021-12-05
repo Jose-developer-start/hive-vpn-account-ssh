@@ -8,11 +8,19 @@ if($_POST){
     $year = date('Y');
     $month = date('n');
     $day = date('j');
-    if($day < 25){
-     $day = date('j') + 7;
+    if($day < 29){
+     $day = date('j') + 3;
     }else{
-         $month++;
-         $days = date('j') + 7;
+         if($day > 28 and $month > 11){
+          $month == 1;
+          $year = $year + 1;
+         }else{
+              if($month < 12){
+                $month++;
+              }
+         }
+         //7 DAYS
+         $days = date('j') + 3;
          $day = $days - 31;
     }
     $date = strval($year."-".$month."-".$day);
