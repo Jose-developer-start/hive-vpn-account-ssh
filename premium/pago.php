@@ -3,7 +3,7 @@
     if(!isset($_SESSION['auth'])){
         header('Location: ../index.php');
     }
-    $total = 3;
+    $total = 2;
     $SID = session_id();
 
     if($_POST){
