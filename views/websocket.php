@@ -64,7 +64,7 @@
 
 <div class="card shadow-lg mb-3">
     <div class="card-header">
-        <h3 class="text-center text-dark">New York</h3>
+        <h3 class="text-center text-dark">New York 31 días Premium</h3>
         <h5 class="text-center">1</h5>
     </div>
     <div class="card-body">

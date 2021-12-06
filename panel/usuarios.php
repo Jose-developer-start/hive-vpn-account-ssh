@@ -27,12 +27,14 @@ $index = 1;
                 <td><?php echo $index ++ ?></td>
                 <td><?php echo $user->name ?></td>
                 <td><?php
+                    echo $user->date;
+                    /*
                     $diasRestantes = date("j",strtotime($user->date)) - $fechaActual;  
                     if($diasRestantes > 0){
                         echo $diasRestantes. " días";
                     }else{
                         echo "Inactivo";
-                    }
+                    }*/
                     ?>
                 </td>
                 <td><?php echo $user->password ?></td>
