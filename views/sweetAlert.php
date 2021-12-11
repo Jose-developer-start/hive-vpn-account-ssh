@@ -1,7 +1,4 @@
-/**
-:::::MENSAJES DE ALERTAS PARA LOGIN Y CREACION DE USUARIOS
 
-*/
 <?php if(isset($_SESSION['new_user']) && isset($_SESSION['auth']) ): ?>
 <script>
     swal({
