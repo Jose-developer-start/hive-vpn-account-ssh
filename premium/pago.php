@@ -38,7 +38,7 @@
 
 <script>
     paypal.Button.render({
-        env: 'sandbox', // sandbox | production
+        env: 'production', // sandbox | production
         style: {
             label: 'checkout', // checkout | credit | pay | buynow | generic
             size: 'responsive', // small | medium | large | responsive
