@@ -4,11 +4,11 @@ include_once "../config/conn_db.php";
 include_once "./ssh2.php";
 
 define("LINKAPI", "https://api.sandbox.paypal.com");
-//define('CLIENTID', 'AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k');
-//define('SECRET', 'EPNjl6lFkbaLxPkK0LhZDOQoVpHMLIvKZ4m372G9yf8W0olYgitfrIcn4J6Si53xjxeCEqbBqlvHVJ99');
+define('CLIENTID', 'AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k');
+define('SECRET', 'EPNjl6lFkbaLxPkK0LhZDOQoVpHMLIvKZ4m372G9yf8W0olYgitfrIcn4J6Si53xjxeCEqbBqlvHVJ99');
 
-define('CLIENTID','ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4');
-define('SECRET', 'EC3yb6dQAkQ-k-k4AsMPM6-HtMuvaxJc-a8WTbU5Jps2Xv9cxGZKGx3nBAIpEZ1d05s2LivHHNnPIBG3');
+//define('CLIENTID','ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4');
+//define('SECRET', 'EC3yb6dQAkQ-k-k4AsMPM6-HtMuvaxJc-a8WTbU5Jps2Xv9cxGZKGx3nBAIpEZ1d05s2LivHHNnPIBG3');
 $Login = curl_init(LINKAPI . "/v1/oauth2/token");
 curl_setopt($Login, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($Login, CURLOPT_USERPWD, CLIENTID . ":" . SECRET);
@@ -108,7 +108,7 @@ if ($state == "approved") {
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
-<body>
+<body class="img-pago">
     <div class="container">
         <div class="row">
             <div class="col-md-5 mx-auto">
@@ -129,6 +129,7 @@ if ($state == "approved") {
 <?php if($state == "approved"): ?>  
     <script>
         swal("Listo", "Su pago se ha realizado con exito!!", "success");
+        
         setTimeout(()=>{
             window.location.href = "../panel/index.php"
         },5000)

@@ -16,7 +16,10 @@ b {
 a {
   color: #f1f1f1 !important;
 }
-
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
 .bg-dark-blue {
   background: #2a6591 !important;
 }
@@ -127,6 +130,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.img-pago{
+  background-color: #232e3c;
+  background-image: url(https://client.opentunnel.net/assets/img/bg-pattern.png);
 }
 .card-login{
     height: 250px;

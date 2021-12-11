@@ -24,22 +24,60 @@
 <h2 class="text-center title-server my-5">SOPORTE PARA JUEGOS Y LLAMADAS</h2>
 
 <div class="container">
-     <div class="content__soporte">
-          <div class="row">
-               <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-
-                    <div class="freefire__logo">
-
+     <div class="row mb-4">
+          <div class="col-lg-3 col-sm-6 mb-3">
+               <div class="d-flex align-items-center">
+                    <div class="">
+                         <h5 class="h1 font-weight-bolder mb-0">15</h5>
+                    </div>
+                    <div class="pl-3">
+                         <h6 class="mb-0">Velocidad hasta de 15 megas por segundo</h6>
                     </div>
                </div>
-               <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-
-                    <div class="whatsapp__logo">
-
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-3">
+               <div class="d-flex align-items-center">
+                    <div class="">
+                         <h5 class="h1 font-weight-bolder mb-0">IP</h5>
+                    </div>
+                    <div class="pl-3">
+                         <h6 class="mb-0">Navegación segura</h6>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-3">
+               <div class="d-flex align-items-center">
+                    <div class=""><span class="h1 font-weight-bolder mb-0"><i class="fas fa-gamepad"></i></span></div>
+                    <div class="pl-3">
+                         <h6 class="mb-0">Funcionales para juegos</h6>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-3">
+               <div class="d-flex align-items-center">
+                    <div class=""><span class="h1 font-weight-bolder mb-0"><i class="fab fa-whatsapp"></i></span></div>
+                    <div class="pl-3">
+                         <h6 class="mb-0">Funcional para llamadas</h6>
                     </div>
                </div>
           </div>
      </div>
+     <div class="row text-center text-lg-left mt-15 mt-lg-20 align-items-center">
+          <div class="col-12 col-lg-6 mb-15 mb-lg-0">
+               <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+                    <div class="freefire__logo">
+     
+                    </div>
+               </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex align-items-center">
+               <div class="pl-0 pl-xl-7 pr-0 pr-xl-16">
+                    <h1 class="mb-0">Testeado en Free fire y WhatSapp</h1>
+                    <p class="mt-8 mb-0">Estos servidores que ofrecemos ofrecen estabilidad y sopote con ping bajo para Videojuegos y estan ubicados en Norte America, así, disponemos de mas paises. Disfruta de la navegación por VPN.</p>
+               </div>
+          </div>
+     </div>
+
 
      <h2 class="text-center title-server my-5">SERVER</h2>
      <?php if (isset($mensaje)) : ?>

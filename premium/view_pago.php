@@ -12,7 +12,7 @@
     <title>Realizar pago de websocket</title>
 </head>
 
-<body>
+<body class="img-pago">
     <div class="my-5">
         <div class="row">
             <div class="col-md-5 mx-auto">
